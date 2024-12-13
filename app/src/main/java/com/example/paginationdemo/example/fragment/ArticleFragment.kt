@@ -31,3 +31,24 @@ class ArticleFragment : Fragment(R.layout.fragment_article) {
         }
     }
 }
+//class ArticleFragment : Fragment(R.layout.fragment_article) {
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        val article = arguments?.getSerializable("article") as? Article
+//
+//        if (article != null) {
+//            val webView: WebView = view.findViewById(R.id.webView)
+//            if (!article.url.isNullOrEmpty()) {
+//                webView.apply {
+//                    webViewClient = WebViewClient()
+//                    loadUrl(article.url)
+//                }
+//            } else {
+//                Toast.makeText(context, "URL is invalid", Toast.LENGTH_SHORT).show()
+//            }
+//        } else {
+//            Toast.makeText(context, "Article not found", Toast.LENGTH_SHORT).show()
+//        }
+//    }
+//}
